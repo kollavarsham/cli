@@ -7,7 +7,7 @@
   },
   "repository"   : {
     "type" : "git",
-    "url"  : "git+https://github.com/kollavarsham/kollavarsham-cli.git"
+    "url": "kollavarsham/cli"
   },
   "keywords"     : [
     "kollavarsham",
@@ -24,7 +24,7 @@
   "homepage"     : "https://github.com/kollavarsham/kollavarsham-cli#readme",
   "dependencies" : {
     "chalk"           : "^1.1.1",
-    "kollavarsham"    : "^0.2.3",
+    "kollavarsham": "^0.3.0",
     "nopt"            : "^3.0.3",
     "update-notifier" : "^0.5.0"
   }
