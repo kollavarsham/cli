@@ -1,0 +1,31 @@
+{
+  "name"         : "kollavarsham-cli",
+  "version"      : "0.2.3",
+  "description"  : "Convert Gregorian date to Kollavarsham date and vice versa",
+  "bin"          : {
+    "kollavarsham" : "cli.js"
+  },
+  "repository"   : {
+    "type" : "git",
+    "url"  : "git+https://github.com/kollavarsham/kollavarsham-cli.git"
+  },
+  "keywords"     : [
+    "kollavarsham",
+    "malayalam",
+    "era",
+    "malayalam",
+    "calendar"
+  ],
+  "author"       : "The Kollavarsham Team",
+  "license"      : "MIT",
+  "bugs"         : {
+    "url" : "https://github.com/kollavarsham/kollavarsham-cli/issues"
+  },
+  "homepage"     : "https://github.com/kollavarsham/kollavarsham-cli#readme",
+  "dependencies" : {
+    "chalk"           : "^1.1.1",
+    "kollavarsham"    : "^0.2.3",
+    "nopt"            : "^3.0.3",
+    "update-notifier" : "^0.5.0"
+  }
+}
