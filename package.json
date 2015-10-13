@@ -1,6 +1,6 @@
 {
   "name": "kollavarsham-cli",
-  "version": "0.4.0",
+  "version": "0.7.3",
   "description": "Convert Gregorian date to Kollavarsham date and vice versa",
   "bin": {
     "kollavarsham": "cli.js"
@@ -24,8 +24,8 @@
   "homepage": "https://github.com/kollavarsham/kollavarsham-cli#readme",
   "dependencies": {
     "chalk": "^1.1.1",
-    "kollavarsham": "^0.4.0",
-    "nopt": "^3.0.3",
+    "kollavarsham": "^0.7.3",
+    "nopt": "^3.0.4",
     "update-notifier": "^0.5.0"
   }
 }
