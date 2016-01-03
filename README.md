@@ -84,4 +84,4 @@ kollavarsham 04:04:2011
 Check out the history at [GitHub Releases](https://github.com/kollavarsham/cli/releases)
 
 ## License
-Copyright (c) 2014-2015 The Kollavarsham Team. Licensed under the MIT license.
+Copyright (c) 2014-2016 The Kollavarsham Team. Licensed under the MIT license.
