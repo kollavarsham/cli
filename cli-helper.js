@@ -29,7 +29,7 @@ var cliHelper = {
     console.log('    ' + '   Display the current app version');
     console.log('    ' + chalk.blue.bold('-m --mode [0|1]'));
     console.log('    ' + '   ' + chalk.yellow.bold('0') + ' - Gregorian Calendar Date to Malayalam Calendar Date');
-    console.log('    ' + '   ' + chalk.yellow.bold('1') + ' - Malayalam Calendar Date to Gregorian Calendar Date');
+    console.log('    ' + '   ' + chalk.yellow.bold('1') + ' - Malayalam Calendar Date to Gregorian Calendar Date [NOT IMPLEMENTED YET]');
     console.log('    ' + chalk.blue.bold('-c --system [\'InPancasiddhantika\'|\'SuryaSiddhanta\']'));
     console.log('    ' + '   Sets system to use as \'InPancasiddhantika\' or \'SuryaSiddhanta\'. Default is \'SuryaSiddhanta\'.');
     console.log('    ' + '   ' + chalk.yellow.bold('InPancasiddhantika') + ' - Calculations are based on older constants in Pancasiddhantika (AD 505).');
@@ -45,10 +45,6 @@ var cliHelper = {
     console.log('    ' + chalk.blue.bold('-g --longitude [number]'));
     console.log('    ' + '   Set the longitude of the location to be used as the basis of the conversions. Should be between -180 and +180');
     console.log('    ' + chalk.gray('   default: ') + chalk.yellow.bold('75.8') + chalk.gray(' (Use option --showlongitudes for help)'));
-    console.log('    ' + chalk.blue.bold('-o --output-format [\'list\'|\'verbose\']'));
-    console.log('    ' + '   ' + chalk.yellow.bold('list') + '    - for dates on both sides of the entered');
-    console.log('    ' + '   ' + chalk.yellow.bold('verbose') + ' - for detailed view of the output date');
-    console.log('    ' + chalk.gray('   (Any value other than \'list\' or \'verbose\' will be discarded)'));
     console.log(chalk.green('arguments'));
     console.log(chalk.green('========='));
     console.log('    ' + chalk.blue.bold('Date'));
@@ -130,9 +126,6 @@ var cliHelper = {
     if (opts.longitude) {
       options.longitude = opts.longitude;
     }
-    if (opts.outputformat) {
-      options.outputformat = opts.outputformat;
-    }
     return options;
   },
   parseDate       : function (date) {
@@ -155,10 +148,8 @@ var cliHelper = {
     console.log(chalk.gray('\nThe current settings for ') + chalk.green('kollavarsham ') +
       chalk.gray('calculations are as follows:'));
     console.log(chalk.gray('System         : ' + settings.system));
-    console.log(chalk.gray('Mode           : ' + settings.mode));
     console.log(chalk.gray('Latitude       : ' + settings.latitude));
     console.log(chalk.gray('Longitude      : ' + settings.longitude));
-    console.log(chalk.gray('Output         : ' + settings.outputformat));
   }
 };
 

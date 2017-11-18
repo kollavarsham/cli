@@ -27,9 +27,7 @@ var opts = nopt({
   'showlongitudes' : Boolean,
   'showlatitudes'  : Boolean,
   'latitude'       : Number,
-  'longitude'      : Number,
-  'outputformat'   : ['list', 'verbose']
-
+  'longitude'      : Number
 }, {
   h : '--help',
   v : '--version',
@@ -39,7 +37,6 @@ var opts = nopt({
   o : '--showlongitudes',
   t : '--latitude',
   g : '--longitude',
-  f : '--outputformat'
 });
 
 var args = opts.argv.remain;
@@ -87,7 +84,9 @@ if (opts.help) {
   return cliHelper.showLongitudes();
 }
 else {
-  var kollavarsham = new Kollavarsham(cliHelper.parseOptions(opts));
+  var settings = cliHelper.parseOptions(opts);
+  console.log(settings);
+  var kollavarsham = new Kollavarsham(settings);
 
   if (firstArgument) {
     var mode = opts.mode || 0;
