@@ -23,9 +23,9 @@
   },
   "homepage": "https://github.com/kollavarsham/kollavarsham-cli#readme",
   "dependencies": {
-    "chalk": "^1.1.1",
-    "kollavarsham": "^0.7.3",
-    "nopt": "^3.0.6",
-    "update-notifier": "^0.6.0"
+    "chalk": "^2.3.0",
+    "kollavarsham": "^1.0.1",
+    "nopt": "^4.0.1",
+    "update-notifier": "^2.3.0"
   }
 }
